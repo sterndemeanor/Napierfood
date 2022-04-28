@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/animate.css">
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Exo:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/resources/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resources/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resources/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/resources/favicons/site.webmanifest">
+    <link rel="mask-icon" href="/resources/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/resources/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/resources/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="start">Start Quiz</div>
+        <div id="guide">
+            <h2>Quiz Guide</h2>
+            <h4>1. This quiz will test your knowledge on nutrition and food</h4>
+            <h4>2. You have 20 seconds for each question</h4>
+            <h4>3. You have only one chance to click on the right answer</h4>
+            <h4>4. Once the quiz begins there is no going back</h4>
+            <div id="button">
+                <button id="exit">Exit</button>
+                <button id="continue">Continue</button>
+            </div>
+        </div>
+        <div id="quiz">
+            <div id="quiz_header">
+                <h5>Napierfood Quiz</h5>
+                <div id="timer">
+                    <h6>Time passed</h6>
+                    <h6 id="time">00</h6>
+                </div>
+            </div>
+            <div id="question">
+                <h2 id="questionNo"></h2>
+                <h2 id="questionText"></h2>
+            </div>
+            <div id="optionList">
+                <h4 class="choice_que" id="option1"></h4>
+                <h4 class="choice_que" id="option2"></h4>
+                <h4 class="choice_que" id="option3"></h4>
+                <h4 class="choice_que" id="option4"></h4>
+            </div>
+            <div id="answersSection">
+                <h3 id="total_correct">3 of 10 questions</h3>
+                <h3 id="next_question">Next</h3>
+            </div>
+        </div>
+        <div id="result">
+            <i class="ion-md-trophy"></i>
+            <h6>You have completed the quiz</h6>
+            <h6 id="points">You Got 4 Out Of 10</h6>
+            <button id="quit">Quit quiz</button>
+            <button id="startAgain">Start again</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row" id="footer">
+            <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">About us </a></li>
+                    <li><a href="#">Blog </a></li>
+                    <li><a href="#">Press </a></li>
+                    <li><a href="#">IOS App </a></li>
+                    <li><a href="#">Android App </a></li>
+                </ul>
+            </div>
+            <div class="col span-1-of-2">
+                <ul class="social-links">
+                    <li><a href="#"><i class="ion-logo-facebook"></i></a></li>
+                    <li><a href="#"><i class="ion-logo-twitter"></i></a></li>
+                    <li><a href="#"><i class="ion-logo-googleplus"></i></a></li>
+                    <li><a href="#"><i class="ion-logo-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <p>
+                Copyright &copy; 2022 by Marcell. All rights reserved.
+            </p>
+        </div>
+    </footer>
+    
+    <script src="js/questions.js"></script>
+    <script src="js/quizscript.js"></script>
+</body>
+
+</html>
