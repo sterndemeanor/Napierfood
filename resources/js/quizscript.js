@@ -131,7 +131,7 @@ next_question.addEventListener("click", () => {
 
 //quit button effect
 quit.addEventListener("click", () => {
-    location.href = '/index.html';
+    location.href = 'index.html';
     start.style.display = "block";
     result.style.display = "none";
 });
